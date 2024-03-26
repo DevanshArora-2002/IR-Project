@@ -137,7 +137,7 @@ if __name__ == "__main__":
     titles, bodies, pages = preprocess_documents(dataset)
     corpus = list(bodies)
 
-    query = input("Enter the file path (press Enter for default): ")
+    query = input("Enter the query (press Enter for default): ")
     # If no input is given, assign a default value
     if not query:
         query = "Extension and amendment of Integrated Goods and Services Tax Act"
