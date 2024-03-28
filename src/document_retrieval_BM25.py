@@ -116,8 +116,7 @@ def retrieve_top_n(corpus, query, n=1):
     
     return json.dumps(result_dict)
 
-
-if __name__ == "__main__":
+def get_query_results(query):
     dataset = []
     dataset_maplist = []
     dir_path = r'.\res\csv_etl_files'
@@ -129,15 +128,13 @@ if __name__ == "__main__":
     # Print the list of files
     print("Files present", dir_path, ":")
     for file in file_paths:
-        #print(file)
+        # print(file)
         documents = read_csv(file)
         dataset.extend(documents)
-        dataset_maplist.extend([file]*len(documents))
+        dataset_maplist.extend([file] * len(documents))
 
     titles, bodies, pages = preprocess_documents(dataset)
     corpus = list(bodies)
-
-    query = input("Enter the query (press Enter for default): ")
     # If no input is given, assign a default value
     if not query:
         query = "Extension and amendment of Integrated Goods and Services Tax Act"
@@ -145,4 +142,5 @@ if __name__ == "__main__":
     preprocessed_query = preprocess_query(query)
 
     retrieval_results = retrieve_top_n(corpus, preprocessed_query, n=10)
-    print(retrieval_results)
+    return retrieval_results
+    
