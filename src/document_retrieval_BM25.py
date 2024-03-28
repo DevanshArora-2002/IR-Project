@@ -119,7 +119,8 @@ def retrieve_top_n(corpus, query, n=1):
 def get_query_results(query):
     dataset = []
     dataset_maplist = []
-    dir_path = r'.\res\csv_etl_files'
+    dir_path = os.path.join(os.path.dirname(os.getcwd()),'res','csv_etl_files')
+    #dir_path = r'.\res\csv_etl_files'
     # List files present at the specified directory
     csv_files = os.listdir(dir_path)
     # Join file path and file name for each file
