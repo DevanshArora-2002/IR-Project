@@ -41,6 +41,10 @@ import csv
 import os
 import spacy
 import pickle
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
 # Read data from CSV file
 def read_csv(file_path):
     documents = []
@@ -172,7 +176,7 @@ def retrieve_top_n_optimized(corpus, query, n=1):
     return {"query": query,
         "retrieval_results": top_results}
 
-def get_query_results(query):
+def get_query_results(query,top_k):
     dataset = []
     dataset_maplist = []
     dir_path = os.path.join(os.path.dirname(os.getcwd()),'res','csv_etl_files')
@@ -201,6 +205,6 @@ def get_query_results(query):
     preprocessed_query = preprocess_query(query)
 
         
-    retrieval_results = retrieve_top_n_optimized(corpus, preprocessed_query, n=10)
+    retrieval_results = retrieve_top_n_optimized(corpus, preprocessed_query,top_k)
     return retrieval_results
     
