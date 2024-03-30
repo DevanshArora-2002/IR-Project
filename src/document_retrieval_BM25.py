@@ -169,10 +169,8 @@ def retrieve_top_n_optimized(corpus, query, n=1):
     # Retrieve top n results using the optimized function
     top_results = retrieve_top_n_results_fast(bm25, preprocessed_query, corpus, n=n)
     
-    return json.dumps({
-        "query": query,
-        "retrieval_results": top_results
-    })
+    return {"query": query,
+        "retrieval_results": top_results}
 
 def get_query_results(query):
     dataset = []
