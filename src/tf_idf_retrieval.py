@@ -14,7 +14,7 @@ def preprocess_text(text):
     tokens = word_tokenize(text)
     return " ".join(tokens)
 
-def retrieve_top_files(query, csv_files, inverted_index, top_k):
+def retrieve_top_files(query, inverted_index, top_k=10):
     query_tokens = word_tokenize(preprocess_text(query))
     relevant_files = set()
 
