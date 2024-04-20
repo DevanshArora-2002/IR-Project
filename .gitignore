@@ -2,3 +2,5 @@
 .DS_Store
 .xml
 .pyc
+src/__pycache__
+.idea
