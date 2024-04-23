@@ -1,0 +1,12 @@
+fastapi
+uvicorn==0.15.0
+accelerate
+transformers
+bitsandbytes
+rank_bm25
+pandas
+nltk
+spacy
+#python3 -m spacy download en_core_web_sm
+scikit-learn
+peft
