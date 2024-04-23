@@ -1,0 +1,59 @@
+<div class="chatbot-container">
+  <h2 class="chatbot-title">Rag InLavs Chatbot</h2>
+
+  <div class="chat-window" #chatWindow>
+    <div class="empty-message">
+      <img [src]="'assets/' + 'inlavs2.png'" class="pic" />
+      <h3 *ngIf="messages.length === 0">How can I help you today?</h3>
+    </div>
+
+    <div class="chat-messages" *ngFor="let message of messages">
+      <div class="message-profile">
+        <img
+          *ngIf="message.profileImage"
+          [src]="'assets/' + message.profileImage"
+          alt="User Profile"
+        />
+        <span *ngIf="!message.profileImage">Anonymous</span>
+      </div>
+      <div
+        class="message"
+        [ngClass]="{
+          'user-message': message.isUser,
+          'bot-message': !message.isUser
+        }"
+      >
+        {{ message.text }}
+      </div>
+    </div>
+  </div>
+  <div class="button-container" *ngIf="messages.length === 0">
+    <div class="button-row">
+      <button class="button2" (click)="sendMessage2(text1)">
+        {{ text1 }} &emsp;<b>↑</b>
+      </button>
+      <button class="button2" (click)="sendMessage2(text2)">
+        {{ text2 }} &emsp;<b>↑</b>
+      </button>
+    </div>
+    <div class="button-row">
+      <button class="button2" (click)="sendMessage2(text3)">
+        {{ text3 }} &emsp;<b>↑</b>
+      </button>
+      <button class="button2" (click)="sendMessage2(text4)">
+        {{ text4 }} &emsp;<b>↑</b>
+      </button>
+    </div>
+  </div>
+
+  <div class="input-container">
+    <input
+      type="text"
+      [(ngModel)]="newMessage"
+      (keyup.enter)="sendMessage()"
+      placeholder="Message In-Lavs..."
+    />
+    <button class="button" (click)="sendMessage()">Send</button>
+    <button class="button" (click)="newChat()">New Chat</button>
+  </div>
+</div>

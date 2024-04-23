@@ -176,19 +176,19 @@ def retrieve_top_n_optimized(corpus, query, n=1):
     return {"query": query,
         "retrieval_results": top_results}
 
-def get_query_results(query,top_k):
+def get_query_results(query,file_paths,top_k):
     dataset = []
     dataset_maplist = []
-    dir_path = os.path.join(os.path.dirname(os.getcwd()),'res','csv_etl_files')
-    print(dir_path)
+    #dir_path = os.path.join(os.path.dirname(os.getcwd()),'res','csv_etl_files')
+    #print(dir_path)
     #dir_path = r'.\res\csv_etl_files'
     # List files present at the specified directory
-    csv_files = os.listdir(dir_path)
+    #csv_files = os.listdir(dir_path)
     # Join file path and file name for each file
-    file_paths = [os.path.join(dir_path, file) for file in csv_files]
+    #file_paths = [os.path.join(dir_path, file) for file in csv_files]
 
     # Print the list of files
-    print("Files present", dir_path, ":")
+    #print("Files present", dir_path, ":")
     for file in file_paths:
         # print(file)
         documents = read_csv(file)
@@ -202,9 +202,9 @@ def get_query_results(query,top_k):
     if not query:
         query = "Extension and amendment of Integrated Goods and Services Tax Act"
 
-    preprocessed_query = preprocess_query(query)
+    #preprocessed_query = preprocess_query(query)
 
         
-    retrieval_results = retrieve_top_n_optimized(corpus, preprocessed_query,top_k)
+    retrieval_results = retrieve_top_n_optimized(corpus, query,top_k)
     return retrieval_results
     
