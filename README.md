@@ -52,11 +52,16 @@ git clone "https://github.com/DevanshArora-2002/IR-Project.git"
 ```
 Navigate to Backend and activate virtual environment:
 ```bash
-cd IR-Project/website/backend
 cd IR-Project\website\backend
 python3 -m venv venv
 source activate venv
+pip install -r requirements.txt
 python3 -m spacy download en_core_web_sm
+```
+
+Activate Backend:
+```bash
+uvircorn main:app --port 5000
 ```
 
 Navigate to Frontend:
@@ -64,7 +69,7 @@ Navigate to Frontend:
 cd IR-Project\website\frontend
 ```
 
-Assuming node and npm are installed:
+Activate Frontend (assuming node and npm are installed):
 ```bash
 ng serve
 ```
