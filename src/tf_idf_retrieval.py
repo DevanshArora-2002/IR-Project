@@ -14,7 +14,7 @@ def preprocess_text(text):
     tokens = word_tokenize(text)
     return " ".join(tokens)
 
-def retrieve_top_files(query, inverted_index, top_k=10):
+def retrieve_top_files(query, main_path,inverted_index, top_k=10):
     query_tokens = word_tokenize(preprocess_text(query))
     relevant_files = set()
 
@@ -28,7 +28,7 @@ def retrieve_top_files(query, inverted_index, top_k=10):
 
     file_texts = []
     file_names = []
-
+    relevant_files = [main_path+'/'+file for file in relevant_files]
     # Load and preprocess text from relevant files
     for file in relevant_files:
         df = pd.read_csv(file)

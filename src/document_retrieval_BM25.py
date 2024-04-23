@@ -202,9 +202,9 @@ def get_query_results(query,file_paths,top_k):
     if not query:
         query = "Extension and amendment of Integrated Goods and Services Tax Act"
 
-    preprocessed_query = preprocess_query(query)
+    #preprocessed_query = preprocess_query(query)
 
         
-    retrieval_results = retrieve_top_n_optimized(corpus, preprocessed_query,top_k)
+    retrieval_results = retrieve_top_n_optimized(corpus, query,top_k)
     return retrieval_results
     
