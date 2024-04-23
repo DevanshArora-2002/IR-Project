@@ -75,7 +75,7 @@ ng serve
 ```
 
 ## Appendix
-- **Research Paper URL:** https://www.overleaf.com/project/65c1f64b1fc254137181e6d3
+- **Research Paper URL:** https://drive.google.com/file/d/1q7QDBSoUURB8Oxj-RbYePHKGCpQEkg6Z/view?usp=sharing
 - **Powerpoint URL:** https://www.canva.com/design/DAF_rQjo5rM/saDTJLIjPRci3RAi1lb7cQ/edit?utm_content=DAF_rQjo5rM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 - **Github Repository:** https://github.com/DevanshArora-2002/IR-Project.git
 - **Youtube URL:** https://www.youtube.com/watch?v=QX_s909PF1g
