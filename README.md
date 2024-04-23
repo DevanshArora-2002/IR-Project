@@ -61,7 +61,7 @@ python3 -m spacy download en_core_web_sm
 
 Activate Backend:
 ```bash
-uvircorn main:app --port 5000
+uvicorn main:app --port 5000
 ```
 
 Navigate to Frontend:
