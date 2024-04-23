@@ -1,0 +1,162 @@
+.container-fluid {
+  background-color: #212121;
+}
+
+.chatbot-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Set container height to 100% of viewport height */
+  background-color: #212121;
+  margin: 0;
+  padding: 0;
+}
+
+.chat-window {
+  flex: 1; /* Allow chat window to expand and fill available space */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  background-color: #212121; /* Background color for input container */
+  padding: 10px;
+  margin: 20px;
+  border: white 1px solid;
+  border-radius: 15px;
+}
+
+.input-container input {
+  background-color: #212121;
+  color: white;
+  flex: 1; /* Allow input field to expand and fill available space */
+  margin: 10px;
+  border: none;
+  font-size: large;
+  outline: none;
+}
+
+.input-container button {
+  background-color: #373737; /* Background color for send button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+/* Styles for the chat messages container */
+.chat-messages {
+  max-width: 900px; /* Adjust as needed */
+  margin: 0 auto; /* Center align the messages */
+  display: flex;
+}
+
+/* Style for each individual message */
+.message {
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  font-size: large;
+  flex: 1;
+}
+
+.empty-message {
+  text-align: center; /* Center align the text */
+}
+
+.empty-message h3 {
+  color: white; /* Set text color to white */
+  font-size: 24px; /* Set font size to make it big */
+  vertical-align: bottom;
+}
+
+/* Styles for user and bot messages */
+.user-message {
+  background-color: #373737; /* Blue color for user messages */
+  color: #fff; /* White text color */
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.bot-message {
+  background-color: #373737; /* Blue color for user messages */
+  color: #fff; /* White text color */
+  margin: 10px;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.message-container {
+  display: flex;
+}
+
+.message-profile {
+  margin-right: 10px; /* Adjust margin as needed */
+  margin: 10px;
+}
+
+.message-profile img {
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  border-radius: 50%; /* Make the image circular */
+}
+
+.pic {
+  padding-top: 70px;
+  width: 120px; /* Adjust size as needed */
+  height: 120px; /* Adjust size as needed */
+  border-radius: 50%; /* Make the image circular */
+}
+
+.chatbot-title {
+  color: white; /* Set text color to white */
+  text-align: center; /* Center align text */
+}
+
+.chat-window::-webkit-scrollbar {
+  display: none;
+}
+
+.button {
+  margin-left: 7px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px; /* Adjust spacing between rows */
+}
+
+.button2 {
+  padding: 10px 20px;
+  margin: 5px; /* Adjust spacing between buttons */
+  background-color: #212121;
+  color: white;
+  border-color: white;
+  cursor: pointer;
+  border-radius: 7px;
+  border-width: 1px;
+  width: 500px;
+  height: 50px;
+}
+
+.button {
+  padding: 10px 20px;
+  margin: 5px; /* Adjust spacing between buttons */
+  background-color: #373737;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #555; /* Change color on hover */
+}
