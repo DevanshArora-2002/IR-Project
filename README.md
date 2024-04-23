@@ -46,6 +46,11 @@ Plans for future development include:
 ## Conclusion
 RAG-InLAvS offers a promising approach to provide accessible and accurate legal information to the Indian population. With its combination of diverse datasets, efficient retrieval techniques, and machine learning, the project showcases the potential for effective legal chatbots tailored to specific contexts. Further development and user feedback integration are expected to enhance the model's value for legal empowerment in India.
 
+## Commands
+```bash
+git clone "https://github.com/DevanshArora-2002/IR-Project.git"
+```
+
 ## Appendix
 - **Research Paper URL:** https://www.overleaf.com/project/65c1f64b1fc254137181e6d3
 - **Powerpoint URL:** https://www.canva.com/design/DAF_rQjo5rM/saDTJLIjPRci3RAi1lb7cQ/edit?utm_content=DAF_rQjo5rM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
