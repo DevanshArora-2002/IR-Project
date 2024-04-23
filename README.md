@@ -50,6 +50,7 @@ RAG-InLAvS offers a promising approach to provide accessible and accurate legal 
 - **Research Paper URL:** https://www.overleaf.com/project/65c1f64b1fc254137181e6d3
 - **Powerpoint URL:** https://www.canva.com/design/DAF_rQjo5rM/saDTJLIjPRci3RAi1lb7cQ/edit?utm_content=DAF_rQjo5rM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 - **Github Repository:** https://github.com/DevanshArora-2002/IR-Project.git
-
+- **Youtube URL:** https://www.youtube.com/watch?v=QX_s909PF1g
+- **Website URL:** The website is hosted locally.
 
 Thank you for your interest in the RAG-InLAvS IR Project! For more information or inquiries, please contact Group-17.
