@@ -50,6 +50,24 @@ RAG-InLAvS offers a promising approach to provide accessible and accurate legal 
 ```bash
 git clone "https://github.com/DevanshArora-2002/IR-Project.git"
 ```
+Navigate to Backend and activate virtual environment:
+```bash
+cd IR-Project/website/backend
+cd IR-Project\website\backend
+python3 -m venv venv
+source activate venv
+python3 -m spacy download en_core_web_sm
+```
+
+Navigate to Frontend:
+```bash
+cd IR-Project\website\frontend
+```
+
+Assuming node and npm are installed:
+```bash
+ng serve
+```
 
 ## Appendix
 - **Research Paper URL:** https://www.overleaf.com/project/65c1f64b1fc254137181e6d3
